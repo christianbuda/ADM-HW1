@@ -3,7 +3,7 @@ Repo for 1st ADM homework
 
 ## Description of files:
 
-* **_Submissions _ HackerRank.pdf_** contains the pdf printout of the submission page for all the problems in Homework1
+* **_Submissions_HackerRank.pdf_** contains the pdf printout of the submission page for all the problems in Homework1
 
 * **_scripts_Problem_1.py_** contains the script of all the 91 challenges in Problem 1.
 Every script starts with #Challenge Name.
