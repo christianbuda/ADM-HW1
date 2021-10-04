@@ -25,7 +25,6 @@ def birthdayCakeCandles(candles):
     return count
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     candles_count = int(input().strip())
 
@@ -33,9 +32,8 @@ if __name__ == '__main__':
 
     result = birthdayCakeCandles(candles)
 
-    fptr.write(str(result) + '\n')
+    print(str(result) + '\n')
 
-    fptr.close()
 
 #Number Line Jumps
 
@@ -47,16 +45,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'kangaroo' function below.
-#
-# The function is expected to return a STRING.
-# The function accepts following parameters:
-#  1. INTEGER x1
-#  2. INTEGER v1
-#  3. INTEGER x2
-#  4. INTEGER v2
-#
 
 def kangaroo(x1, v1, x2, v2):
     if v1==v2:
@@ -80,7 +68,6 @@ def kangaroo(x1, v1, x2, v2):
     return 'NO'
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     first_multiple_input = input().rstrip().split()
 
@@ -94,10 +81,7 @@ if __name__ == '__main__':
 
     result = kangaroo(x1, v1, x2, v2)
 
-    fptr.write(result + '\n')
-
-    fptr.close()
-
+    print(result + '\n')
 
 #Viral Advertising
 
@@ -109,12 +93,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'viralAdvertising' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts INTEGER n as parameter.
-#
 
 def viralAdvertising(n):
     L=2
@@ -128,35 +106,21 @@ def viralAdvertising(n):
     return C
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input().strip())
 
     result = viralAdvertising(n)
 
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    print(str(result) + '\n')
 
 
 #Recursive Digit Sum
-
-#!/bin/python3
 
 import math
 import os
 import random
 import re
 import sys
-
-#
-# Complete the 'superDigit' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. STRING n
-#  2. INTEGER k
-#
 
 def superDigit(n, k):
     #it's easy to see that superDigit(n,k)=superDigit(k*superDigit(n,1),1)
@@ -172,7 +136,6 @@ def superDigit(n, k):
     return(singlesuperDigit(str(k*singlesuperDigit(n))))
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     first_multiple_input = input().rstrip().split()
 
@@ -182,14 +145,10 @@ if __name__ == '__main__':
 
     result = superDigit(n, k)
 
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    print(str(result) + '\n')
 
 
 #Insertion Sort - Part 1
-
-#!/bin/python3
 
 import math
 import os
@@ -197,13 +156,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'insertionSort1' function below.
-#
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER_ARRAY arr
-#
 
 def insertionSort1(n, arr):
     ins=arr[-1]
@@ -229,21 +181,11 @@ if __name__ == '__main__':
 
 #Insertion Sort - Part 2
 
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
-
-#
-# Complete the 'insertionSort2' function below.
-#
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER_ARRAY arr
-#
 
 def insertionSort1(n, arr):
     ins=arr[n-1]
